@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import   'animate.css';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    background: url("/img/various-vegetables-black-table-with-space-message.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: black;
+    height: 120px;
+    
+}
+.navbar li a{
+    
+    
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    &:hover{
+        background-color: yellowgreen;
+        color: black
+    }
+   
+
+    
+}
+
+header .navbar{
+  margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 100%;
+    margin: 0 40px;
+}
+.navbar .menu-links{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+   
+}
+li{
+   list-style-type: none;
+}
+#logo{
+   
+    
+ 
+
+    &:hover{
+        background-color: yellowgreen;
+    }
+}
+.section-1{
+   margin-top: 200px;
+    height: 60vh;
+ 
+    align-items: center;
+    padding: 0 60px;
+
+}
+.content {
+    width: 300px;
+    color: aliceblue;
+    animation-name: para1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+button{
+    border: none;
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 0;
+    background-color: antiquewhite;
+    font-weight: bold;
+    &:hover{
+        background-color: rgb(224, 92, 40);
+        cursor: pointer;
+    }
+}
+@keyframes para1 {
+    0%{
+        opacity: 0;
+        filter: blur(50px);
+    }
+25%{
+    opacity: 1;
+    filter: blur(0);
+}
+
+    50%{
+        opacity: 1;
+        filter: blur(0);
+
+    }
+    75%{
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100%{
+        opacity: 0;
+        filter: blur(50px);
+
+        
+    }
+}
+
+
+  
+  /* .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+    /* .dropdown {
+   
+    float: left;
+    overflow: hidden;
+  } */
+  
+  
+  .dropdown-content {
+    /* margin-top: 10px; */
+    display: none;
+    position: absolute;
+    background-color: rgb(39, 174, 219);
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .rider {
+    margin-left: -200px;
+    width: 150px;
+    height: 150px;
+    margin-top: 120px;
+    animation-name: my-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 4;
+  
+}
+
+@keyframes my-animation {
+    0%{
+       
+        left: 0;
+    }
+
+    12.5%{
+      
+        left: calc(50vw - 150px / 2);
+        transform: rotate(0deg);
+       
+    }
+
+    25% {
+        left: calc(50vw - 150px / 2);
+        transform: rotate();
+        border-radius: 100%;
+       
+    }
+    37.5%{
+        left: calc(70vw - 150px / 2);
+        transform: rotate();
+    
+    }
+    47%{
+        transform: rotateY(0deg);
+     
+    }
+    50% {
+        left: calc(150vw - 150px - 20px);
+        transform: rotateY(180deg);
+    }
+
+    62.5%{
+        left: calc(70vw - 150px / 2);
+        transform: rotateY(180deg);
+     
+        
+    }
+
+    75%{
+        left: calc(50vw - 150px / 2);
+        transform: rotateY(180deg);
+      
+    }
+
+    76%{
+        transform: rotateY(180deg);
+  
+    }
+
+    100%{
+        left: 0;
+        transform: rotateY(180deg);
+      
+        
+    }
+}
+#food{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: 400px;
+ justify-content: center;
+ margin-top: -300px;
+ z-index: 1;
+ animation: food-fast;
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+}
+@keyframes food-fast {
+    0%{
+       
+    }
+
+    12.5%{
+        
+     
+     
+       
+    }
+
+    25% {
+    
+      
+       
+    }
+    37.5%{
+        background-size: 300px 300px;
+       background-image: url('/img/pngwing.com.png') ;
+   
+        
+    }
+    47%{
+       
+    }
+    50% {
+        background-size: 300px 300px;
+        background-image: url('/img/food3.png') ; 
+       
+    }
+
+    62.5%{
+    
+        
+        
+    }
+
+    75%{
+        background-size: 300px 300px;
+       background-image: url('/img/food2.png') ;
+    
+    }
+
+    76%{
+        background-size: 300px 300px;
+        background-image: url('/img/food2.png') ;
+     
+    }
+
+    100%{
+  
+        background-size: 300px 300px;
+       background-image: url('/img/food4.png') ;
+        
+    }
+    
+}
+.animate__jello{
+    --animate-duration: 2s;
+
+}
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
